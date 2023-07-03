@@ -1,1 +1,1 @@
-console.log('This is a template repo')
+console.log("This is a template repo");
