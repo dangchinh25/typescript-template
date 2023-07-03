@@ -1,0 +1,14 @@
+/node_modules
+dist
+*.test.js
+*.spec.js
+*.log
+.DS_Store
+.deploy
+./process.yml
+process.yml
+.vscode/settings.json
+*.rdb
+.env
+.env.original
+jest/coverage
