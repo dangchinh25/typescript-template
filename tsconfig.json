@@ -5,7 +5,9 @@
     "strict": true,
     "resolveJsonModule": true,
     "target": "ES2018",
-    "types": ["node"],
+    "types": [
+      "node"
+    ],
     "noImplicitAny": false,
     "moduleResolution": "node",
     "sourceMap": true,

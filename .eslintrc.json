@@ -8,7 +8,9 @@
     "sourceType": "module"
   },
   "parser": "@typescript-eslint/parser",
-  "plugins": ["@typescript-eslint"],
+  "plugins": [
+    "@typescript-eslint"
+  ],
   "extends": [
     "eslint:recommended",
     "plugin:@typescript-eslint/eslint-recommended",
@@ -45,23 +47,26 @@
         "ignorePattern": "-"
       }
     ],
-    "multiline-comment-style": ["error", "starred-block"],
     "no-inline-comments": "error",
     "spaced-comment": [
       "error",
       "always",
       {
         "line": {
-          "exceptions": ["-"]
+          "exceptions": [
+            "-"
+          ]
         },
         "block": {
-          "exceptions": ["-"]
+          "exceptions": [
+            "-"
+          ]
         }
       }
     ],
     "comma-style": [
       "error",
-      "first",
+      "last",
       {
         "exceptions": {
           "CallExpression": false,
@@ -84,7 +89,10 @@
         "after": true
       }
     ],
-    "comma-dangle": ["error", "never"],
+    "comma-dangle": [
+      "error",
+      "never"
+    ],
     "quotes": [
       "error",
       "single",
@@ -92,11 +100,26 @@
         "allowTemplateLiterals": true
       }
     ],
-    "linebreak-style": ["warn", "unix"],
-    "space-in-parens": ["error", "always"],
-    "array-bracket-spacing": ["error", "always"],
-    "computed-property-spacing": ["error", "always"],
-    "object-curly-spacing": ["error", "always"],
+    "linebreak-style": [
+      "warn",
+      "unix"
+    ],
+    "space-in-parens": [
+      "error",
+      "always"
+    ],
+    "array-bracket-spacing": [
+      "error",
+      "always"
+    ],
+    "computed-property-spacing": [
+      "error",
+      "always"
+    ],
+    "object-curly-spacing": [
+      "error",
+      "always"
+    ],
     "object-curly-newline": [
       "error",
       {
@@ -134,7 +157,10 @@
         "beforeColon": false
       }
     ],
-    "template-curly-spacing": ["error", "always"],
+    "template-curly-spacing": [
+      "error",
+      "always"
+    ],
     "brace-style": [
       "error",
       "1tbs",
@@ -143,8 +169,14 @@
       }
     ],
     "space-before-function-paren": "off",
-    "@typescript-eslint/space-before-function-paren": ["error", "always"],
-    "func-call-spacing": ["error", "never"],
+    "@typescript-eslint/space-before-function-paren": [
+      "error",
+      "always"
+    ],
+    "func-call-spacing": [
+      "error",
+      "never"
+    ],
     "no-unused-vars": [
       "error",
       {
@@ -152,7 +184,10 @@
         "caughtErrors": "none"
       }
     ],
-    "semi": ["error", "always"],
+    "semi": [
+      "error",
+      "always"
+    ],
     "operator-linebreak": [
       "error",
       "before",
@@ -172,8 +207,14 @@
         "after": true
       }
     ],
-    "function-call-argument-newline": ["error", "consistent"],
-    "function-paren-newline": ["error", "multiline-arguments"],
+    "function-call-argument-newline": [
+      "error",
+      "consistent"
+    ],
+    "function-paren-newline": [
+      "error",
+      "multiline-arguments"
+    ],
     "newline-per-chained-call": [
       "error",
       {
@@ -202,8 +243,14 @@
       },
       {
         "blankLine": "always",
-        "prev": ["multiline-const", "export"],
-        "next": ["multiline-const", "export"]
+        "prev": [
+          "multiline-const",
+          "export"
+        ],
+        "next": [
+          "multiline-const",
+          "export"
+        ]
       },
       {
         "blankLine": "always",
@@ -216,12 +263,18 @@
         "next": "*"
       }
     ],
-    "func-style": ["error", "expression"],
+    "func-style": [
+      "error",
+      "expression"
+    ],
     "space-before-blocks": "error",
     "no-mixed-spaces-and-tabs": "error",
     "no-negated-condition": "error",
     "no-trailing-spaces": "error",
-    "multiline-ternary": ["error", "always-multiline"],
+    "multiline-ternary": [
+      "error",
+      "always-multiline"
+    ],
     "no-multiple-empty-lines": [
       "error",
       {
@@ -232,7 +285,10 @@
     ],
     "no-unneeded-ternary": "error",
     "prefer-object-spread": "error",
-    "quote-props": ["error", "as-needed"],
+    "quote-props": [
+      "error",
+      "as-needed"
+    ],
     "semi-spacing": [
       "error",
       {
@@ -260,40 +316,62 @@
       "error",
       {
         "selector": "default",
-        "format": ["camelCase"]
+        "format": [
+          "camelCase"
+        ]
       },
       {
         "selector": "variable",
-        "format": ["camelCase", "UPPER_CASE"]
+        "format": [
+          "camelCase",
+          "UPPER_CASE"
+        ]
       },
       {
         "selector": "parameter",
-        "format": ["camelCase"],
+        "format": [
+          "camelCase"
+        ],
         "leadingUnderscore": "allow"
       },
       {
         "selector": "memberLike",
-        "format": ["camelCase"]
+        "format": [
+          "camelCase"
+        ]
       },
       {
         "selector": "typeLike",
-        "format": ["PascalCase"]
+        "format": [
+          "PascalCase"
+        ]
       },
       {
         "selector": "enumMember",
-        "format": ["PascalCase", "UPPER_CASE"]
+        "format": [
+          "PascalCase",
+          "UPPER_CASE"
+        ]
       }
     ],
     "jest/expect-expect": [
       "error",
       {
-        "assertFunctionNames": ["expect"]
+        "assertFunctionNames": [
+          "expect"
+        ]
       }
     ],
     "jest/prefer-lowercase-title": [
       "error",
       {
-        "allowedPrefixes": ["GET", "POST", "PUT", "DELETE", "PATCH"]
+        "allowedPrefixes": [
+          "GET",
+          "POST",
+          "PUT",
+          "DELETE",
+          "PATCH"
+        ]
       }
     ],
     "jest/no-mocks-import": "off",
