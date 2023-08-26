@@ -6,7 +6,8 @@
     "resolveJsonModule": true,
     "target": "ES2018",
     "types": [
-      "node"
+      "node",
+      "jest"
     ],
     "noImplicitAny": false,
     "moduleResolution": "node",
